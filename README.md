@@ -37,6 +37,7 @@ Flowchart:
 ---
 config:
   layout: elk
+  theme: dark
 ---
 graph TD
     Player[Player]
@@ -68,15 +69,5 @@ graph TD
     
     HydrationEffect -->|damages| Player
     TempEffect -->|damages| Player
-    
-    classDef playerNode stroke:#818cf8,fill:#eef2ff
-    classDef systemNode stroke:#2dd4bf,fill:#f0fdfa
-    classDef effectNode stroke:#fb923c,fill:#fff7ed
-    classDef damageNode stroke:#f87171,fill:#fef2f2
-    
-    class Player playerNode
-    class Biome,Temp,Hydration,TempBlocks,Armor,Items systemNode
-    class HydrationEffect,TempEffect effectNode
-    class HydrationEffect,TempEffect,damageNode damageNode
 
 ```
