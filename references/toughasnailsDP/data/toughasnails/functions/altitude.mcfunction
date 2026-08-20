@@ -1,0 +1,17 @@
+	execute as @a[scores={ylevel=0..1},nbt={Dimension:0}] at @s if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 4
+	execute as @a[scores={ylevel=1..22},nbt={Dimension:0}] at @s if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 3
+	execute as @a[scores={ylevel=22..43},nbt={Dimension:0}] at @s if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 2
+	execute as @a[scores={ylevel=43..64},nbt={Dimension:0}] at @s if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 1
+	execute as @a[scores={ylevel=64..85},nbt={Dimension:0}] at @s if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 0
+	execute as @a[scores={ylevel=85..106},nbt={Dimension:0}] at @s if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 1
+	execute as @a[scores={ylevel=106..127},nbt={Dimension:0}] at @s if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 2
+	execute as @a[scores={ylevel=127..148},nbt={Dimension:0}] at @s if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 3
+	execute as @a[scores={ylevel=148..169},nbt={Dimension:0}] at @s if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 4
+	execute as @a[scores={ylevel=169..190},nbt={Dimension:0}] at @s if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 5
+	execute as @a[scores={ylevel=190..211},nbt={Dimension:0}] at @s if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 6
+	execute as @a[scores={ylevel=211..232},nbt={Dimension:0}] at @s if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 7
+	execute as @a[scores={ylevel=232..253},nbt={Dimension:0}] at @s if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 8
+	execute as @a[scores={ylevel=253..271},nbt={Dimension:0}] at @s if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 9
+	execute as @a[scores={ylevel=271..295},nbt={Dimension:0}] at @s if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 10
+	execute as @a[scores={ylevel=295..316},nbt={Dimension:0}] at @s if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 11
+	execute as @a[scores={ylevel=316..},nbt={Dimension:0}] at @s if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 11

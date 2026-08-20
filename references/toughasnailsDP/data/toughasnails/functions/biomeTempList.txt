@@ -1,0 +1,2 @@
+biome temperature range (code temp) = -.5 - 2.0
+biome algorith to get desert to 10 = ((code temp)-.5)*10

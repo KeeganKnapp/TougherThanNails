@@ -1,0 +1,214 @@
+{
+    "providers": [
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/freezing.png",
+            "ascent": -10,
+            "height": 16,
+            "chars": ["\uE779"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/burning.png",
+            "ascent": -10,
+            "height": 16,
+            "chars": ["\uE782"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/normal.png",
+            "ascent": -10,
+            "height": 16,
+            "chars": ["\uE783"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/fulldrop.png",
+            "ascent": -16,
+            "height": 9,
+            "chars": ["\uE784"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/burning.png",
+            "ascent": -8,
+            "height": 16,
+            "chars": ["\uE785"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/freezing.png",
+            "ascent": -8,
+            "height": 16,
+            "chars": ["\uE786"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/burningview.png",
+            "ascent": 100,
+            "height": 200,
+            "chars": ["\uE787"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/burningview.png",
+            "ascent": 200,
+            "height": 400,
+            "chars": ["\uE788"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/blankspace.png",
+            "ascent": 200,
+            "height": 400,
+            "chars": ["\uE789"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/halfdrop.png",
+            "ascent": -16,
+            "height": 9,
+            "chars": ["\uE790"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/emptydrop.png",
+            "ascent": -16,
+            "height": 9,
+            "chars": ["\uE791"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/6.png",
+            "ascent": -8,
+            "height": 16,
+            "chars": ["\uE806"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/7.png",
+            "ascent": -8,
+            "height": 16,
+            "chars": ["\uE807"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/8.png",
+            "ascent": -8,
+            "height": 16,
+            "chars": ["\uE808"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/9.png",
+            "ascent": -8,
+            "height": 16,
+            "chars": ["\uE809"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/10.png",
+            "ascent": -8,
+            "height": 16,
+            "chars": ["\uE810"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/11.png",
+            "ascent": -8,
+            "height": 16,
+            "chars": ["\uE811"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/12.png",
+            "ascent": -8,
+            "height": 16,
+            "chars": ["\uE812"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/13.png",
+            "ascent": -8,
+            "height": 16,
+            "chars": ["\uE813"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/14.png",
+            "ascent": -8,
+            "height": 16,
+            "chars": ["\uE814"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/15.png",
+            "ascent": -8,
+            "height": 16,
+            "chars": ["\uE815"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/16.png",
+            "ascent": -8,
+            "height": 16,
+            "chars": ["\uE816"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/17.png",
+            "ascent": -8,
+            "height": 16,
+            "chars": ["\uE817"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/18.png",
+            "ascent": -8,
+            "height": 16,
+            "chars": ["\uE818"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/19.png",
+            "ascent": -8,
+            "height": 16,
+            "chars": ["\uE819"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/fire_vignette1.png",
+            "ascent": 150,
+            "height": 300,
+            "chars": ["\uE821"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/fire_vignette2.png",
+            "ascent": 150,
+            "height": 300,
+            "chars": ["\uE822"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/fire_vignette3.png",
+            "ascent": 150,
+            "height": 300,
+            "chars": ["\uE823"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/fire_vignette4.png",
+            "ascent": 150,
+            "height": 300,
+            "chars": ["\uE824"]
+        },
+	{
+            "type": "bitmap",
+            "file": "knapp:tempbar/fire_vignette5.png",
+            "ascent": 150,
+            "height": 300,
+            "chars": ["\uE825"]
+        }
+    ]
+}

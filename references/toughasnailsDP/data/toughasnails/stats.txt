@@ -1,0 +1,74 @@
+equilibrium = 12
+wet effect = -7
+altitude = (y=0)= level 4 altitude ; +1 for every 21 blocks above; -1 for every 21 blocks above level 0 altitude
+max temp = 25; min temp = 0
+nearby blocks = scans in a radius of 3 blocks from the player
+	lava = 15
+	magma block = 12
+	torch = unimplemented
+rain
+	-wetness score 7 
+underground
+	-biome temp -1
+wool/slime gear
+	+/-1 for every article of clothing
+temp timer 
+	the farther away from equilibrium(12) the faster the clock will run to change temperature to account for suddon temp drops (ex. in nether[very hot] + jump in water[very cold] = fast temp drop) 
+snow = -10 score
+mobs = not implemented
+holding items = not implemented
+
+time(+666 ticks)
+	-1 = 12667
+	-2 = 13334
+	-3 = 14000
+	-4 = 14667
+	-5 = 15334
+	-6 = 16001
+	-7 = 16668
+	-8 = 17335
+	-9 = 18000
+	-8 = 18666
+	-7 = 19332
+	-6 = 19998
+	-5 = 20664
+	-4 = 21330
+	-3 = 21996
+	-2 = 22662
+	-1 = 23328
+
+Thirst Drinks
+	Water Source (x1 Drink):  (1.5)
+	Water Canteen (x1 Use):  (1.5)
+	Water Bottle:  (1.5)
+	Potion:  (2)
+	Milk Bucket:  (3)
+	Purified Water Source (x1 Drink):  (3)
+	Purified Water Canteen (x1 Use):  (3)
+	Purified Water Bottle:  (3)
+	Pumpkin Juice:  (3.5)
+	Apple Juice:  (4)
+	Carrot Juice:  (4)
+	Melon Juice:  (4)
+	Cactus Juice:  (4.5)
+	Beetroot Juice:  (5)
+	Chorus Fruit Juice:  (6)
+	Golden Carrot Juice:  (7)
+	Glistering Melon Juice:  (8)
+	Golden Apple Juice:  (10)
+
+#hypothermia = starts at ..0 but doesnt stop until 2..
+#hyperthermia = starts at 25.. but doesnt stop until ..23
+
+#display templevel
+Shaking Snowflake = ..4
+Snowflake = ..5
+Noticeable Blue = 6..10
+Grey = 11..14
+Noticeable Red = 15..19
+Fire = 20..
+Shaking Fire = 21..
+
+
+
+

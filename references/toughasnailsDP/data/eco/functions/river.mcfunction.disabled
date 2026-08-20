@@ -1,0 +1,2 @@
+advancement revoke @s only eco:river
+scoreboard players set @s playerBiome 7

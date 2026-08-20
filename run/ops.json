@@ -1,0 +1,26 @@
+[
+  {
+    "uuid": "dd740724-9d11-4889-b68c-ad3daf7b9f15",
+    "name": "cobblestoner",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "a288cb29-a681-33d0-bc05-44996f7b6ce1",
+    "name": "Player705",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "c98187a9-e17b-3f48-8a33-882e62d18d19",
+    "name": "Player250",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "b3c3f2f1-b037-4c1e-ad70-d70dc80dd454",
+    "name": "player756",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

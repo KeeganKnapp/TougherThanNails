@@ -1,0 +1,11 @@
+{
+    "parent": "item/generated",
+    "textures": {
+	"layer0": "item/milk_bucket"
+    },
+
+	"overrides": [
+		{"predicate": {"custom_model_data":122},"model": "item/water_bucket_fake"},
+		{"predicate": {"custom_model_data":123},"model": "item/purified_water_bucket"}
+	]
+}

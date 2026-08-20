@@ -1,0 +1,22 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 35553,
+      "minecraft:time_since_rest": 29600,
+      "minecraft:fall_one_cm": 1125,
+      "minecraft:walk_one_cm": 19933,
+      "minecraft:total_world_time": 29600,
+      "minecraft:leave_game": 6,
+      "minecraft:fly_one_cm": 167207,
+      "minecraft:damage_taken": 120,
+      "minecraft:sneak_time": 197,
+      "minecraft:play_time": 29600,
+      "minecraft:jump": 291,
+      "minecraft:time_since_death": 29600
+    },
+    "minecraft:picked_up": {
+      "minecraft:crimson_roots": 2
+    }
+  },
+  "DataVersion": 4790
+}

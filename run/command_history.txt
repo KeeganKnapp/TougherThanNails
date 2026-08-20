@@ -1,0 +1,42 @@
+/musicsync
+/musicsync skip
+/musicsync skip nether
+/musicsync skip
+/musicsync freedom
+/playsound globalmusic:alpha
+/stopsound
+/playsound globalmusic:biome_fest
+/playsound globalmusic:dreiton
+/stopsound @s
+/playsound globalmusic:dreiton
+/playsound minecraft:music_disc.blocks music @s
+/playsound globalmusic:aria_math music @s
+/playsound globalmusic:aria_math player @s 81.00 63.50 -62.66
+/stopsound @a
+/playsound globalmusic:aria_math player @s 81.00 63.50 -62.66
+/playsound minecraft:music_disc.blocks music @a
+/stopsound
+/stopsound @a
+/playsound globalmusic:door player @s 81.00 63.50 -62.66
+/playsound globalmusic:door player @s ~ ~ ~
+/playsound globalmusic:mellohi player @s ~ ~ ~
+/playsound globalmusic:wait player @s ~ ~ ~
+/playsound globalmusic:excuse player @s ~ ~ ~
+/stopsound @a
+/playsound globalmusic:excuse player @s ~ ~ ~
+/stopsound @a
+/musicsync skip
+/give @p juke
+/give @p minecraft:jukebox
+/playsound globalmusic:haunt_muskie
+/stopsound @a
+/musicsync skip
+/weather clear
+/musicsync skip
+/musicsync debugsound direct
+/musicsync debugsound registered
+/musicsync skip
+/musicsync debugsound musicstopplay
+/musicsync debugsound stopplay
+/setblock ~ ~ ~ minecraft:nether_portal
+/musicsync skip

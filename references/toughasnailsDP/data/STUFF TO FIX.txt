@@ -1,0 +1,1 @@
+when underwater with even thirst bar level, the thirst bar displays as full

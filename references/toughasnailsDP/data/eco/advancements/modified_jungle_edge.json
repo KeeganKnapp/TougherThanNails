@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "biome": {
+            "trigger": "minecraft:modified_jungle_edge",
+            "conditions": {
+                "biome": "badlands",
+                "position": {
+                    "x": {
+                        "min": -30000000,
+                        "max": 30000000
+                    },
+                    "y": {
+                        "min": -30000000,
+                        "max": 30000000
+                    },
+                    "z": {
+                        "min": -30000000,
+                        "max": 30000000
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "eco:modified_jungle_edge"
+    }
+	
+}

@@ -1,0 +1,95 @@
+[02:11:35] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 26.1.2 with Fabric Loader 0.19.3
+[02:11:35] [main/INFO] (FabricLoader/Mappings) Mappings not present!
+[02:11:35] [main/INFO] (FabricLoader) Loading 49 mods:
+	- fabric-api 0.155.2+26.1.2
+	   |-- fabric-key-mapping-api-v1 2.0.4+e2bdee784c
+	   |-- fabric-model-loading-api-v1 8.0.11+c80601bb4c
+	   |-- fabric-renderer-api-v1 13.0.8+c80601bb4c
+	   |-- fabric-renderer-indigo 8.1.5+1403e82c4c
+	   |-- fabric-rendering-v1 23.3.1+e9207d814c
+	   |-- fabric-screen-api-v1 5.1.0+981dd9b24c
+	   \-- fabric-sound-api-v1 2.0.4+11a26f314c
+	- fabric-api-base 2.0.3+ece063234c
+	- fabric-api-lookup-api-v1 2.0.12+d5a053b64c
+	- fabric-biome-api-v1 18.0.5+2fa62b4e4c
+	- fabric-block-api-v1 3.0.2+ec56b6014c
+	- fabric-block-getter-api-v2 2.0.6+ec56b6014c
+	- fabric-command-api-v2 3.0.5+e2bdee784c
+	- fabric-content-registries-v0 11.3.0+0082c9664c
+	- fabric-convention-tags-v2 4.6.2+4f11f7994c
+	- fabric-crash-report-info-v1 1.0.3+9f78a5a84c
+	- fabric-creative-tab-api-v1 5.0.11+d871b99e4c
+	- fabric-data-attachment-api-v1 2.2.9+44a0bd1d4c
+	- fabric-data-generation-api-v1 24.3.3+cda368334c
+	- fabric-debug-api-v1 1.0.1+c792624d4c
+	- fabric-dimensions-v1 5.1.7+ad343a8d4c
+	- fabric-entity-events-v1 5.0.2+e2bdee784c
+	- fabric-events-interaction-v0 5.2.2+07b380be4c
+	- fabric-game-rule-api-v1 4.0.5+d871b99e4c
+	- fabric-gametest-api-v1 4.0.17+867b87624c
+	- fabric-item-api-v1 14.3.0+6d1aaa724c
+	- fabric-lifecycle-events-v1 4.1.1+df84eb3d4c
+	- fabric-loot-api-v3 3.0.12+00a1fba64c
+	- fabric-menu-api-v1 2.0.14+d871b99e4c
+	- fabric-message-api-v1 7.0.5+dae8ce3e4c
+	- fabric-networking-api-v1 6.3.1+554860db4c
+	- fabric-object-builder-api-v1 23.1.0+abb459f14c
+	- fabric-particles-v1 5.0.15+b61fef434c
+	- fabric-permission-api-v1 1.0.2+7437387b4c
+	- fabric-recipe-api-v1 9.0.16+be4b75ae4c
+	- fabric-registry-sync-v0 7.1.0+2fa62b4e4c
+	- fabric-rendering-fluids-v1 6.0.1+d871b99e4c
+	- fabric-resource-conditions-api-v1 6.1.0+83dd0ba34c
+	- fabric-resource-loader-v0 3.3.17+4fc5413f4c
+	- fabric-resource-loader-v1 2.0.10+7c44c7324c
+	- fabric-serialization-api-v1 2.0.3+11a26f314c
+	- fabric-tag-api-v1 2.1.1+371cf5db4c
+	- fabric-transfer-api-v1 8.0.6+357ea7334c
+	- fabric-transitive-access-wideners-v1 8.1.3+3ff549fb4c
+	- fabricloader 0.19.3
+	- java 25
+	- minecraft 26.1.2
+	- mixinextras 0.5.4
+	- musicsync 1.0.0
+	- polymer-autohost 0.16.5+26.1.2
+	- polymer-common 0.16.5+26.1.2
+	- polymer-core 0.16.5+26.1.2
+	- polymer-networking 0.16.5+26.1.2
+	- polymer-registry-sync-manipulator 0.16.5+26.1.2
+	- polymer-resource-pack 0.16.5+26.1.2
+[02:11:36] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/home/keegan/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.17.3+mixin.0.8.7/41c4a3984a80f4679e759fb9f495587acc5cdac7/sponge-mixin-0.17.3+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[02:11:36] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_25
+[02:11:38] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.4).
+[02:11:52] [main/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[02:11:56] [main/INFO] (Minecraft) Loaded 1515 recipes
+[02:11:57] [main/INFO] (Minecraft) Loaded 1617 advancements
+[02:11:57] [main/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 65 new biomes in 2.351 ms
+[02:11:57] [IO-Worker-1/INFO] (Minecraft) [Polymer] Starting resource pack generation...
+[02:11:57] [Server thread/INFO] (Minecraft) Starting minecraft server version 26.1.2
+[02:11:57] [Server thread/INFO] (Minecraft) Loading properties
+[02:11:57] [Server thread/INFO] (Minecraft) Default game type: SURVIVAL
+[02:11:57] [Server thread/INFO] (Minecraft) Generating keypair
+[02:11:57] [Server thread/INFO] (Minecraft) Starting Minecraft server on *:25565
+[02:11:57] [Server thread/WARN] (Minecraft) **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[02:11:57] [Server thread/WARN] (Minecraft) The server will make no attempt to authenticate usernames. Beware.
+[02:11:57] [Server thread/WARN] (Minecraft) While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[02:11:57] [Server thread/WARN] (Minecraft) To change this, set "online-mode" to "true" in the server.properties file.
+[02:11:57] [Server thread/INFO] (Minecraft) Preparing level "world"
+[02:11:58] [Server thread/INFO] (Minecraft) Loading 0 persistent chunks...
+[02:11:59] [Server thread/INFO] (Minecraft) Preparing spawn area: 100%
+[02:11:59] [Server thread/INFO] (Minecraft) Time elapsed: 226 ms
+[02:11:59] [Server thread/INFO] (Minecraft) Done (1.091s)! For help, type "help"
+[02:11:59] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[02:11:59] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[02:11:59] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[02:11:59] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (world): All chunks are saved
+[02:11:59] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[02:11:59] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[02:11:59] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[02:12:01] [Server thread/INFO] (Minecraft) [Polymer] Resource pack created successfully! You can find it in game folder as polymer/resource_pack.zip
+[02:12:05] [Server thread/INFO] (Minecraft) Player250[/127.0.0.1:55772] logged in with entity id 66 at (-16.657290434910095, 66.0, -26.36955008711438)
+[02:12:05] [Server thread/INFO] (Polymer) Full sync for Player250 took 193.27 ms
+[02:12:05] [Server thread/INFO] (Minecraft) Player250 joined the game
+[02:25:28] [Server thread/INFO] (Minecraft) Player250 lost connection: Disconnected
+[02:25:28] [Server thread/INFO] (Minecraft) Player250 left the game
+[02:26:28] [Server thread/INFO] (Minecraft) Server empty for 60 seconds, pausing

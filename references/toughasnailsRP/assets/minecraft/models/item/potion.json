@@ -1,0 +1,13 @@
+{
+    "parent": "item/generated",
+    "textures": {
+    	"layer1": "item/potion",
+	"layer0": "item/potion_overlay"
+    },
+
+	"overrides": [
+		{"predicate": {"custom_model_data":121},"model": "item/purified_water_bottle"},
+		{"predicate": {"custom_model_data":123},"model": "item/canteen_filled"},
+		{"predicate": {"custom_model_data":124},"model": "item/canteen_empty"}
+	]
+}

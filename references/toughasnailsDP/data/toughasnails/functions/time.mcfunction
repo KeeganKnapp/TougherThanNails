@@ -1,0 +1,17 @@
+	execute as @a[nbt={Dimension:0}] at @s if score timeTick tick matches 12667..13334 if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 1
+	execute as @a[nbt={Dimension:0}] at @s if score timeTick tick matches 13334..14000 if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 2
+	execute as @a[nbt={Dimension:0}] at @s if score timeTick tick matches 14000..14667 if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 3
+	execute as @a[nbt={Dimension:0}] at @s if score timeTick tick matches 14667..15334 if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 4
+	execute as @a[nbt={Dimension:0}] at @s if score timeTick tick matches 15334..16000 if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 5
+	execute as @a[nbt={Dimension:0}] at @s if score timeTick tick matches 16000..16668 if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 6
+	execute as @a[nbt={Dimension:0}] at @s if score timeTick tick matches 16668..17335 if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 7
+	execute as @a[nbt={Dimension:0}] at @s if score timeTick tick matches 17335..18000 if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 8
+	execute as @a[nbt={Dimension:0}] at @s if score timeTick tick matches 18000..18666 if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 9
+	execute as @a[nbt={Dimension:0}] at @s if score timeTick tick matches 18666..19332 if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 8
+	execute as @a[nbt={Dimension:0}] at @s if score timeTick tick matches 19332..19998 if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 7 
+	execute as @a[nbt={Dimension:0}] at @s if score timeTick tick matches 19998..20664 if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 6
+	execute as @a[nbt={Dimension:0}] at @s if score timeTick tick matches 20664..21330 if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 5
+	execute as @a[nbt={Dimension:0}] at @s if score timeTick tick matches 21330..21996 if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 4	
+	execute as @a[nbt={Dimension:0}] at @s if score timeTick tick matches 21996..22662 if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 3
+	execute as @a[nbt={Dimension:0}] at @s if score timeTick tick matches 22662..23328 if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 2
+	execute as @a[nbt={Dimension:0}] at @s if score timeTick tick matches 23328..23994 if score tempTick tick matches 1..1 run scoreboard players remove @s tempscore 1
