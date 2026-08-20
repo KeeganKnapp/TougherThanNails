@@ -33,7 +33,7 @@ Flowchart:
 
     Game Mechanics :
 
-'''mermaid
+```mermaid
 ---
 config:
   layout: elk
@@ -79,4 +79,4 @@ graph TD
     class HydrationEffect,TempEffect effectNode
     class HydrationEffect,TempEffect,damageNode damageNode
 
-'''
+```
