@@ -1,0 +1,28 @@
+{
+  "stats": {
+    "minecraft:mined": {
+      "minecraft:dead_bush": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:emerald": 1
+    },
+    "minecraft:dropped": {
+      "minecraft:emerald": 2
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 5975,
+      "minecraft:time_since_rest": 1286,
+      "minecraft:fall_one_cm": 1125,
+      "minecraft:walk_one_cm": 2416,
+      "minecraft:total_world_time": 1452,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 13663,
+      "minecraft:sneak_time": 10,
+      "minecraft:play_time": 1286,
+      "minecraft:jump": 46,
+      "minecraft:time_since_death": 1286,
+      "minecraft:drop": 2
+    }
+  },
+  "DataVersion": 4790
+}

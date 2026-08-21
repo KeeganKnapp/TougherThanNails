@@ -9,7 +9,7 @@
   ],
   "contact": {},
   "license": "MIT",
-  "environment": "server",
+  "environment": "*",
   "entrypoints": {
     "main": [
       "dev.keeganknapp.tougherthannails.TougherThanNails"
@@ -23,5 +23,11 @@
     "polymer-core": "*",
     "polymer-resource-pack": "*",
     "polymer-autohost": "*"
-  }
+  },
+    "custom": {
+        "cardinal-components": [
+            "tougherthannails:thirst"
+            "tougherthannails:temperature"
+        ]
+    }
 }

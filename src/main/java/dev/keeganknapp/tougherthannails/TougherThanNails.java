@@ -36,8 +36,12 @@ public final class TougherThanNails implements ModInitializer {
         // source Polymer merges into the single generated/autohosted resource pack.
         PolymerResourcePackUtils.addModAssets("tougherthannails");
 
-        //ServerLifecycleEvents.SERVER_STARTED.register(MusicSyncManager::onServerStarted);
-        //ServerTickEvents.END_SERVER_TICK.register(MusicSyncManager::onServerTick);
+        //on server started
+        ServerLifecycleEvents.SERVER_STARTED.register(ThirstManager::onServerStarted);
+
+        ServerTickEvents.END_SERVER_TICK.register(ActionBarManager::onServerTick);
+        ServerTickEvents.END_SERVER_TICK.register(ThirstManager::onServerTick);
+
         //ServerPlayConnectionEvents.DISCONNECT.register(
         //      (handler, server) -> MusicSyncManager.onPlayerDisconnect(handler.getPlayer()));
 

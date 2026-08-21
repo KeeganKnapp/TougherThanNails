@@ -7,7 +7,20 @@ version = project.mod_version
 group = project.maven_group
 
 repositories {
-	maven { name = 'Nucleoid'; url = 'https://maven.nucleoid.xyz/' }
+    maven { name = 'Nucleoid'; url = 'https://maven.nucleoid.xyz/' }
+
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Modrinth"
+                    url = "https://api.modrinth.com/maven"
+            }
+        }
+        // forRepositories(fg.repository) // Uncomment when using ForgeGradle
+        filter {
+            includeGroup "maven.modrinth"
+        }
+    }
 }
 
 dependencies {
@@ -24,6 +37,9 @@ dependencies {
 	include "eu.pb4:polymer-common:${project.polymer_version}"
 	include "eu.pb4:polymer-resource-pack:${project.polymer_version}"
 	include "eu.pb4:polymer-autohost:${project.polymer_version}"
+
+        implementation "maven.modrinth:K01OU20C:RRJmyPMW"                    
+        include "maven.modrinth:K01OU20C:RRJmyPMW"
 }
 
 processResources {
@@ -36,6 +52,15 @@ processResources {
 
 tasks.withType(JavaCompile).configureEach {
 	it.options.release = 25
+}
+
+tasks.named('processResources', ProcessResources) {
+    filePermissions {
+        unix("644")
+    }
+    dirPermissions {
+        unix("755")
+    }
 }
 
 java {

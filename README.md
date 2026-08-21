@@ -33,7 +33,7 @@ Flowchart:
 
     Game Mechanics :
 
-'''mermaid
+```mermaid
 ---
 config:
   layout: elk
@@ -79,4 +79,16 @@ graph TD
     class HydrationEffect,TempEffect effectNode
     class HydrationEffect,TempEffect,damageNode damageNode
 
-'''
+```
+
+
+
+RESEARCH:
+
+Player.causeFoodExhaustion(final float) : adds food exhaustion to the players foodData object
+
+package net.minecraft.network.protocol.game.ClientboundSetActionBarTextPacket : can send action bar text packet to client
+        - just need to figure out how to send it to clients from the server
+
+
+

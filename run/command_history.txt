@@ -40,3 +40,9 @@
 /musicsync debugsound stopplay
 /setblock ~ ~ ~ minecraft:nether_portal
 /musicsync skip
+/gamemode survival
+/title @s actionbar
+/title @s actionbar "
+/title @s actionbar ""
+/title @s actionbar "dsad"
+/gamemode survival
