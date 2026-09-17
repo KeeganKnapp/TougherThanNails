@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": [
+    "minecraft:sweet_berries",
+    "minecraft:sweet_berries",
+    "minecraft:sweet_berries",
+    "minecraft:glass_bottle"
+  ],
+  "result": { "id": "tougherthannails:sweet_berry_juice", "count": 1 }
+}

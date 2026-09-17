@@ -8,6 +8,7 @@ group = project.maven_group
 
 repositories {
     maven { name = 'Nucleoid'; url = 'https://maven.nucleoid.xyz/' }
+    maven { name = 'Ladysnake'; url = 'https://maven.ladysnake.org/releases' }
 
     exclusiveContent {
         forRepository {
@@ -38,8 +39,35 @@ dependencies {
 	include "eu.pb4:polymer-resource-pack:${project.polymer_version}"
 	include "eu.pb4:polymer-autohost:${project.polymer_version}"
 
-        implementation "maven.modrinth:K01OU20C:RRJmyPMW"                    
-        include "maven.modrinth:K01OU20C:RRJmyPMW"
+        implementation "org.ladysnake.cardinal-components-api:cardinal-components-base:8.0.1"
+        implementation "org.ladysnake.cardinal-components-api:cardinal-components-entity:8.0.1"
+        include "org.ladysnake.cardinal-components-api:cardinal-components-base:8.0.1"
+        include "org.ladysnake.cardinal-components-api:cardinal-components-entity:8.0.1"
+}
+
+loom {
+	accessWidenerPath = file("src/main/resources/tougherthannails.accesswidener")
+
+        
+}
+
+fabricApi {
+        configureDataGeneration {
+
+        }
+
+	configureTests {
+		eula = true
+		enableGameTests = true
+		// A dedicated source set (src/gametest/java, with its own fabric.mod.json - see
+		// src/gametest/resources) rather than dropping test code into main - keeps @GameTest-
+		// annotated scenarios out of the actual shipped mod jar entirely. Deliberately its own
+		// separate mod id (not "wendigo") - configureTests' own modId option instead tries to
+		// register "wendigo" a second time under this source set, colliding with the loom.mods{}
+		// declaration below. The gametest mod just depends on wendigo (see its own fabric.mod.json)
+		// for classpath access to its classes, same as any other mod-on-mod dependency.
+		createSourceSet = true
+	}
 }
 
 processResources {
@@ -67,4 +95,44 @@ java {
 	withSourcesJar()
 	sourceCompatibility = JavaVersion.VERSION_25
 	targetCompatibility = JavaVersion.VERSION_25
+}
+
+import org.gradle.jvm.JvmLibrary
+import org.gradle.language.base.artifact.SourcesArtifact
+import org.gradle.api.artifacts.result.ResolvedArtifactResult
+
+tasks.register('downloadSources') {
+    group = 'ide'
+    description = 'Fetches -sources.jar for every dependency and extracts them under sources/ for editor/vim use.'
+    doLast {
+        def outDir = file("$projectDir/sources")
+        outDir.mkdirs()
+
+        def componentIds = configurations.compileClasspath.incoming.resolutionResult.allDependencies
+            .findAll { it.hasProperty('selected') }
+            .collect { it.selected.id }
+
+        def result = dependencies.createArtifactResolutionQuery()
+            .forComponents(componentIds)
+            .withArtifacts(JvmLibrary, SourcesArtifact)
+            .execute()
+
+        result.resolvedComponents.each { component ->
+            component.getArtifacts(SourcesArtifact).each { art ->
+                if (art instanceof ResolvedArtifactResult) {
+                    def jarFile = art.file
+                    def name = jarFile.name.replace('-sources.jar', '')
+                    def dest = new File(outDir, name)
+                    dest.mkdirs()
+                    copy {
+                        from zipTree(jarFile)
+                        into dest
+                    }
+                    println "Extracted ${jarFile.name} -> ${dest}"
+                } else {
+                    println "No sources for: ${component.id}"
+                }
+            }
+        }
+    }
 }

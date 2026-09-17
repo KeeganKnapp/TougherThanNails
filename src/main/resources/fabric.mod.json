@@ -10,12 +10,21 @@
   "contact": {},
   "license": "MIT",
   "environment": "*",
+  "accessWidener": "tougherthannails.accesswidener",
   "entrypoints": {
     "main": [
       "dev.keeganknapp.tougherthannails.TougherThanNails"
+    ],
+    "cardinal-components": [ 
+      "dev.keeganknapp.tougherthannails.ModComponents" 
+    ],
+    "fabric-datagen": [
+        "dev.keeganknapp.tougherthannails.ModDataGenerator"
     ]
   },
-  "mixins": [],
+  "mixins": [
+    "tougherthannails.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=0.19.3",
     "minecraft": "26.1.2",
@@ -26,8 +35,10 @@
   },
     "custom": {
         "cardinal-components": [
-            "tougherthannails:thirst"
-            "tougherthannails:temperature"
+            "tougherthannails:thirst",
+            "tougherthannails:temperature",
+            "tougherthannails:thirst_saturation",
+            "tougherthannails:body_heat"
         ]
     }
 }

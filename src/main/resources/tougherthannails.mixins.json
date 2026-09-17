@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "dev.keeganknapp.tougherthannails.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "LivingEntityMixin",
+    "MobMixin",
+    "ItemsMixin",
+    "BucketItemMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

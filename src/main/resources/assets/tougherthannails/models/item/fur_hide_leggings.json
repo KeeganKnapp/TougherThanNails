@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tougherthannails:item/fur_hide_leggings"
+  }
+}

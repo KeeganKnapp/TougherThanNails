@@ -1,0 +1,6 @@
+{
+  "layers": {
+    "humanoid":          [ { "texture": "tougherthannails:prismarine" } ],
+    "humanoid_leggings": [ { "texture": "tougherthannails:prismarine" } ]
+  }
+}

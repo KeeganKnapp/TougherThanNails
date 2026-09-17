@@ -1,0 +1,112 @@
+import java.util.List;
+import java.util.Optional;
+
+import eu.pb4.polymer.core.api.item.PolymerItem;
+import eu.pb4.polymer.core.api.other.PolymerPotion;
+import net.fabricmc.fabric.api.networking.v1.context.PacketContext;
+import net.minecraft.core.Holder;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.PotionItem;
+import net.minecraft.world.item.alchemy.Potion;
+import net.minecraft.world.item.alchemy.PotionContents;
+import net.minecraft.world.item.alchemy.Potions;
+import net.minecraft.world.item.component.ItemLore;
+import net.minecraft.world.level.Level;
+
+public class ModPotionItem extends PotionItem implements PolymerItem {
+
+    private final int durationTicks;
+
+    private MobEffectInstance[] effects;
+
+    public ModPotionItem(Properties properties, String name, MobEffectInstance[] effects, int durationTicks) {
+        super(properties);
+
+        this.durationTicks = durationTicks;
+        this.effects = effects;
+    }
+
+
+    @Override
+    public Item getPolymerReplacement(Item item, PacketContext context) {
+        return Items.POTION;
+    }
+
+
+    @Override
+    public Item getPolymerItem(ItemStack itemStack, PacketContext context) {
+        return Items.POTION;
+    }
+
+    @Override
+    public void modifyBasePolymerItemStack(ItemStack out, ItemStack stack, PacketContext context, HolderLookup.Provider lookup) {
+        // Polymer provides 'out' specifically to mutate what the client receives
+
+        List<MobEffectInstance> potionEffects = getEffects();
+        int color = 0x000000;
+        for(MobEffectInstance instance : potionEffects) {
+            color += instance.getEffect().value().getColor();
+        }
+        color = color / potionEffects.size();
+
+        Component customName = Component.literal(name());
+
+        List<Component> customLores = potionEffects.stream().map(effect -> effect.getEffect().value().getDisplayName()).toList();
+
+
+        Holder<Potion> awkwardHolder = BuiltInRegistries.POTION.wrapAsHolder(Potions.AWKWARD.value());
+
+        // Hide server effects from client tooltips by assigning a clean vanilla baseline
+        PotionContents clientContents = new PotionContents(
+            Optional.of(awkwardHolder),
+            Optional.of(color),
+            List.of(),
+            Optional.of("")
+        );
+
+        // Inject data components natively understood by unmodded vanilla clients
+        out.set(DataComponents.CUSTOM_NAME, customName);
+        out.set(DataComponents.LORE, new ItemLore(customLores));
+        out.set(DataComponents.POTION_CONTENTS, clientContents);
+    }
+
+    @Override
+    public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity entity) {
+        // Crucial: Only apply gameplay logic on the server side
+        if (!level.isClientSide()) {
+
+            // 1. Create your custom effect instance
+            // (Replace MY_CUSTOM_EFFECT with your server-registered effect entry, 
+            // duration in ticks, and amplifier starting at 0)
+            MobEffectInstance effect = new MobEffectInstance(
+                getEffects()
+                3600, // 3 minutes (20 ticks * 180 seconds)
+                0
+            );
+
+            // 2. Apply it directly to the entity that drank it
+            entity.addEffect(effect);
+        }
+
+        // 3. Let Vanilla handle the standard potion consumption mechanics
+        // This automatically handles decrementing the stack and returning an empty bottle
+        if (entity instanceof Player player && !player.getAbilities().instabuild) {
+            stack.shrink(1);
+            if (stack.isEmpty()) {
+                return new ItemStack(Items.GLASS_BOTTLE);
+            }
+            player.getInventory().add(new ItemStack(Items.GLASS_BOTTLE));
+        }
+
+        return stack;
+    }
+}
+

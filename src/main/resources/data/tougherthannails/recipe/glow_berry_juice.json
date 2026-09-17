@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": [
+    "minecraft:glow_berries",
+    "minecraft:glow_berries",
+    "minecraft:glow_berries",
+    "minecraft:glass_bottle"
+  ],
+  "result": { "id": "tougherthannails:glow_berry_juice", "count": 1 }
+}

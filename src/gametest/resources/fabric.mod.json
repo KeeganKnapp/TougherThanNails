@@ -1,0 +1,16 @@
+{
+	"schemaVersion": 1,
+	"id": "ttn-gametest",
+	"version": "1.0.0",
+	"name": "TougherThanNails GameTests",
+	"description": "Headless @GameTest scenarios for the TTN mod - never shipped, only used by ./gradlew runGameTest.",
+	"environment": "server",
+	"entrypoints": {
+		"fabric-gametest": [
+			"dev.tougherthannails.gametest.TTNGameTest"
+		]
+	},
+	"depends": {
+		"tougherthannails": "*"
+	}
+}

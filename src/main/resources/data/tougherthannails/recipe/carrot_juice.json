@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": [
+    "minecraft:carrot",
+    "minecraft:carrot",
+    "minecraft:carrot",
+    "minecraft:glass_bottle"
+  ],
+  "result": { "id": "tougherthannails:carrot_juice", "count": 1 }
+}

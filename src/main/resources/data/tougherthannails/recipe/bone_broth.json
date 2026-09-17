@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": [
+    "minecraft:bone",
+    "minecraft:carrot",
+    "minecraft:potato",
+    "minecraft:glass_bottle"
+  ],
+  "result": { "id": "tougherthannails:bone_broth", "count": 1 }
+}
